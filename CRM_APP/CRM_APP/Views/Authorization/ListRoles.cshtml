@@ -1,0 +1,48 @@
+﻿@model IEnumerable<IdentityRole>
+
+@*action methoda bakarsak döndürdüğümüz roles IQuery o yüzden IEnum ile yakalayalım*@ 
+@{
+    ViewBag.Title = "All Roles";
+}
+<h1>All Roles</h1>
+
+@if (Model.Any())
+{
+    <a asp-action="CreateRole" asp-controller="Authorization" class="btn btn-primary mb-3" style="width:auto">
+        Create Role
+    </a>
+
+    foreach (var role in Model)
+    {
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Role Id : @role.Id
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">@role.Name</h5>
+            </div>
+            <div class="card-footer">
+                <a asp-controller="Authorization" asp-action="EditRole" asp-route-id="@role.Id" class="btn btn-primary">Edit</a>
+                <a asp-controller="Authorization" asp-action="DeleteRole" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="card">
+        <div class="card-header">
+            No Roles Created Yet
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">
+                Use the button below to create a role
+            </h5>
+            <a asp-action="CreateRole" asp-controller="Authorization" class="btn btn-primary" style="width:auto">
+                Create Role
+            </a>
+        </div>
+    </div>
+}
