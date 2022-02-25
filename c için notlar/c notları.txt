@@ -1,3 +1,0 @@
-isim için char komutu char a[15] bu 15 karakterli değişken yerine %s yapılacak     tek karakter olursa %c yapılır      yani ("%s",
-
-int ise sayılar için 

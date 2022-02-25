@@ -1,8 +1,0 @@
-substring string ifadeyi parçalamaya yarar
-indexof ve lastindexof aranan karakter grubunu bulunmuyorsa -1 döndürür
-metin.uppercase büyük yazdýrýr
-deðiþken ve metod isimleri küçük harfle
-sýnýflarýn isimleri büyük harfle baþlar
-
-encryptText + key.charAt(j)selamaa
-                           classcl

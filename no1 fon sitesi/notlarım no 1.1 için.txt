@@ -1,2 +1,0 @@
-Bu kısımda ise hangisi petrol hangisi yabancı hangisi emeklilik fonu yani kısaca Fon türleri üzerine bir alan yapılacak listeleme yapılırsa güzel olur tıpkı şu sol üstteki dropdownlist gibi
-tamam hallettiğimizde zaten  burayı tam ortadan ikiye böleyim sol tarafta çeşiti sağında ise çeşite göre alfabetik sıralama fiyata göre sıralama özelliklerini ekleyeyim
