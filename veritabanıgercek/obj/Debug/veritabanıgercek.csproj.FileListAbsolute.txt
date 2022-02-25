@@ -1,0 +1,10 @@
+D:\projelerim\veritabanı\veritabanıgercek\bin\Debug\veritabanıgercek.exe.config
+D:\projelerim\veritabanı\veritabanıgercek\bin\Debug\veritabanıgercek.exe
+D:\projelerim\veritabanı\veritabanıgercek\bin\Debug\veritabanıgercek.pdb
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.csprojAssemblyReference.cache
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.Form1.resources
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.Properties.Resources.resources
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.csproj.GenerateResource.cache
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.csproj.CoreCompileInputs.cache
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.exe
+D:\projelerim\veritabanı\veritabanıgercek\obj\Debug\veritabanıgercek.pdb

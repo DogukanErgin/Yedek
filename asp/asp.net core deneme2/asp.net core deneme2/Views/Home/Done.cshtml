@@ -1,0 +1,31 @@
+﻿@model Student
+@{ 
+   
+    Layout = null;
+//RAZOR SYNTAX DENİR BU OLAYA
+} 
+
+
+<!Doctype html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Omotedo</title>
+</head>
+<body class="text-center">
+    <h2>Teşekkürler , @Model.Name</h2>
+    <hr/>
+    @if (Model.WillAttend == true)
+    {
+        @:Kursa katıldınız
+    }
+    else 
+    {
+    @: kursa katılamadınız
+    }
+
+    kursa katılanları <a asp-action="List" class="nav-link">Listesi</a>
+</body>
+</html>

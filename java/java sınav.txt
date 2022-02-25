@@ -1,0 +1,22 @@
+
+public Class Kasa{   // compositon nedir?
+
+private Monitor Monitor 
+bilgisayar parçalardan oluþut compositon bu parçalarý birleþtirmeye yarar.
+
+}
+
+polymorphism    demek 1 fonksiyona parametre olarak 1 referans verdiðimizde 1 referans üzerinden 3 farklý
+nesneye eriþebilir demektir 
+public static void konustur(Hayvan hayvan1){
+
+system.out.println(hayvan1.konus);
+},,,
+
+
+interface 
+bundaki amaç  java da çoklu kalýtým olmadýðý için isim karýþýklýðýnýn önüne geçmek
+nasýl kullanýlýr ;
+bir adet class yerine interface tanýmlanýr bunun içine ise private veya public olmadan metodlar tanýmlanýr//sadece 
+kabuk olarak tanýmlanýr.
+interfaceyi implement ile kendine ekleyenler buradaki metodlarýn hepsini kullanmak zorundadýr

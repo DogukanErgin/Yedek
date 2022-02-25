@@ -1,0 +1,63 @@
+metin = gets.chomp.to_s
+metin=metin.downcase
+h = Hash.new()
+
+metin.each_line { |metin|
+  kelime = metin.split
+  kelime.each { |kelime|
+    if h.has_key?(kelime)
+      h[kelime] =h[kelime]+1
+    else
+      h[kelime] = 1
+    end
+  }}
+
+h.delete_if { |key,value| value<5 }
+h.sort{|x,y| x[1]<=>y[1]}.each { |tekrar|
+  puts "\"#{tekrar[0]}\" #{tekrar[1]} kere tekrar edildi"
+
+}
+
+//i = 0
+while i<metin.length
+  if metin[i] =="."||","||"’"
+    metin[i]=""
+    i=i+1
+  elsif metin[i]=="-"
+    metin[i]=" "
+i=i+1
+  else
+  i=i+1
+  end
+end
+
+
+# Kodunuzu bu dosya içine yazınız
+metin = gets.chomp.to_s
+metin=metin.downcase
+
+
+
+h = Hash.new()
+
+metin.each_line { |metin|
+  kelime = metin.split
+  kelime.each { |kelime|
+    if h.has_key?(kelime)
+      h[kelime] =h[kelime]+1
+    else
+      h[kelime] = 1
+    end
+  }}
+liste=Array.new
+h.delete_if { |key,value|  value<5  }[5]
+liste=h.sort{|y,x| x[1]<=>y[1]}.each { |tekrar|
+  puts " #{tekrar[0]} #{tekrar[1]}" }
+print(liste[1]+liste[2]+liste[3]+liste[4]+liste[5])
+=begin
+
+Kodunuzun düzgün çalışması için
+input metodunun içindeki metni boş bırakın
+gets.chomp
+yeterli...
+=end

@@ -1,0 +1,30 @@
+girdi = Hash.new(-1)
+
+girdi["kıyafet"] = 12
+girdi["pantolon"]=3
+puts girdi["naber"]
+puts girdi["kıyafet"]
+
+girdi =gets.chomp.to_s
+
+count = 0
+if girdi[0,3] == girdi[3,3]
+  count+1
+  end
+  puts girdi[0,3]
+  puts girdi[3,3]
+
+puts count
+uzunmetin={girdi[0,6] =>count}
+
+# Delete keys longer than 3 chars.
+uzunmetin.delete_if{|key, value| value > 5}
+puts uzunmetin
+
+string = "a b c d"
+
+string.split
+# ["a", "b", "c", "d"]
+puts string
+önce girdiden girilen değerleri ayrı ayrı bir yerde tut her birine
+hash ile bir değer atar eğer aynısından varsa değeri arttır

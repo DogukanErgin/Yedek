@@ -1,0 +1,33 @@
+
+def multi_gets(all_text='')
+  until (text = gets) == "\n"
+    all_text << text
+  end
+  return all_text.chomp
+end
+
+
+metin=( multi_gets)
+
+
+
+metin.each_line { |metin|
+  kelime = metin.split
+  kelime.each { |kelime|
+    print kelime[5]
+  }}
+ÇIKTI 
+EMRE 20 91 16 46
+İBRAHİM 77 89 60 50
+SARE 85 40 63 79
+YILMAZ 26 86 78 20
+MUHAMMED YUSUF 8 2 2 53
+ŞENAY 40 30 12 20
+DENİZ 40 47 86 90
+DENİZ ARMAĞAN 67 24 7 19
+BARIŞ 36 2 58 97
+BARAN 63 44 74 96
+FERAT 96 23 67 71
+BARIŞ
+
+İZMA

@@ -1,0 +1,15 @@
+puts "bir sayı girin"
+sayi=gets.chomp.to_i
+adim=0
+while sayi > 1
+if sayi % 2 == 1
+  sayi = sayi * 3 + 1
+  adim=adim + 1
+
+else
+  sayi =sayi/2
+  adim =adim +1
+end
+end
+
+print adim

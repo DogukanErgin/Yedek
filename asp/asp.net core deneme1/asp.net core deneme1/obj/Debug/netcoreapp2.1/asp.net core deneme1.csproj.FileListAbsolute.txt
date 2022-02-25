@@ -1,0 +1,28 @@
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.deps.json
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.runtimeconfig.json
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.runtimeconfig.dev.json
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.dll
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.pdb
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.csprojAssemblyReference.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.AssemblyInfoInputs.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.AssemblyInfo.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.csproj.CoreCompileInputs.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.RazorAssemblyInfo.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.RazorAssemblyInfo.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.RazorTargetAssemblyInfo.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.dll
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.pdb
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.genruntimeconfig.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.Views.dll
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\bin\Debug\netcoreapp2.1\asp.net core deneme1.Views.pdb
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.TagHelpers.input.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.TagHelpers.output.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.RazorCoreGenerate.cache
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Indexsayfasi.cshtml.g.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.RazorTargetAssemblyInfo.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.Views.pdb
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\asp.net core deneme1.csproj.CopyComplete
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index3.cshtml.g.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\Razor\Views\Home\LayoutSayfası.cshtml.g.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\Razor\Views\Home\KitapIndex.cshtml.g.cs
+D:\projelerim\website\tüm kodlar\asp.net core deneme1\asp.net core deneme1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index6.cshtml.g.cs

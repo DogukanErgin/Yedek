@@ -1,0 +1,61 @@
+﻿.BUTONpembeyazi {
+    height: 60px;
+    width: 140px;
+    background-color: #412694;
+    color: deeppink;
+    font-size: 16pt;
+}
+
+.Div {
+    background-color: darkblue;
+    width: 600px;
+    height: 230px;
+    margin-left:150px;
+    margin-top: 100px;
+}
+.ContentPlaceHolder{
+    background-color:navajowhite;
+}
+
+a:link{
+
+    text-decoration:none;
+    font-size:14px;
+    font-family:'Segoe UI';
+    color:#FFFFCC;
+    background-color: #800000;
+}
+a:hover{
+    font-size:22px;
+}
+body {
+    background-image: url(Desktop/müzik/180882.jpg);
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+input {
+    background: fuchsia;
+    border: 1px solid #ffa853;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px #ffa853;
+    color: #666;
+    outline: none;
+    height: 23px;
+    width: 275px;
+}
+
+.textbox {
+    padding: 1px 20px;
+    border: 0;
+    height: 25px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
+    -moz-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
+    -webkit-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+}
+

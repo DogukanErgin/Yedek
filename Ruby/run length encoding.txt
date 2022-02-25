@@ -1,0 +1,18 @@
+def komplex(baslangic)
+  uzunluk=baslangic.to_s.length
+  count=1
+  i=0
+  string=baslangic.to_s
+  puts print"#{string[i+1]}+#{count}"
+  for i in 0...uzunluk
+      if string[i]==string[i+1]
+
+        count=count+1
+      else
+        count=1
+      end
+      print"#{count}#{string[i]}"
+  end
+
+end
+komplex(1151)
