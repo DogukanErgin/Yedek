@@ -1,0 +1,9 @@
+char a[42],b[20];
+	int c;
+	printf("Isminiz?\t");
+	scanf("%s",&a);
+	printf("Soyisminiz?\t");
+	scanf("%s",&b);
+	printf("Okul numaraniz?\t");
+	scanf("%d",&c);
+	printf("Ýsminiz %s soyisminiz %s ve okul numaraniz %d",a,b,c);

@@ -1,0 +1,8 @@
+int z,x,v;
+		printf("birinci sayinizi giriniz: ");
+	    scanf("%d", &z);
+		printf("ikinci sayinizi giriniz: ");
+		scanf("%d", %x);
+		v = x * z
+	    printf("\n");
+		printf("sayilarin çarpimi = %d\n",v);

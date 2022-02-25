@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+/*
+Parametre olarak gelen matrisi kullanarak Pascal üçgenini oluşturan fonksiyonu yazınız.
+Parametre referans olarak gönderilmiştir, dolayısıyla geriye bir şey döndürmeye gerek yoktur.
+Bu örnek için ekrana değerler yazdırmanıza gerek yoktur, önemi de yoktur.
+*/
+void pascal(vector< vector< int > >& vec) {
+   for(int i =0; i<vec.size();i++){
+       vec[i][0]=1;
+       for(int j=0; j<i;j++){
+           vec[i][j+1]=vec[i-1][j]+vec[i-1][j+1];
+       }}
+}
+    //Kodunuzu buraya yazın...
