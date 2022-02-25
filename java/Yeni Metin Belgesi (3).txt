@@ -1,0 +1,493 @@
+import java.util.Scanner;
+002
+ 
+003
+/**
+004
+ * The Ceasar code is really easy to decript. There are only 26 different keys
+005
+ * and frequency studies can decipher a coded message quite rapidly.
+006
+ * In English, as example, the letter "e" is the most commonly used letter followed
+007
+ * by 'a'.  As soon as the encrypted 'e' or 'a' is identified it is quite easy to
+008
+ * apply the same shift to the other letters of the message. But if the message is very short
+009
+ * and screw up the normal frequency of letters like in: "Zebras run in zig zags from
+010
+ * Zambia to Zanzibar" :-)
+011
+ *
+012
+ * If you use the GUI I wrote for the Ceasar code, it is quite easy to enter the coded
+013
+ * message and then try the 26 possible shifts by cliking on the different JRadioButtons
+014
+ *
+015
+ * Derived from the Ceasar code is the Vigenere's square. His code was developped in the
+016
+ * XVII century. Actualy the algorithm has been described in a book published
+017
+ * by Giovan Battista Bellaso in 1563 but is now well known as the Vigener's cypher.
+018
+ * This cypher was reputated 100% safe until the XIX century.
+019
+ *
+020
+ * The whole idea is to use like the Ceasar code a shift of letter in the Alphabet but to change
+021
+ * the number of shifted letter for each letter of the message.  This would completly, at least they thought
+022
+ * at that time, the frequency analysis.
+023
+ *
+024
+ * So to cypher we use the so called Vigenere's square
+025
+ *
+026
+ * A - ABCDEFGHIJKLMNOPQRSTUVWXYZ
+027
+ * B - BCDEFGHIJKLMNOPQRSTUVWXYZA
+028
+ * C - CDEFGHIJKLMNOPQRSTUVWXYZAB
+029
+ * D - DEFGHIJKLMNOPQRSTUVWXYZABC
+030
+ * E - EFGHIJKLMNOPQRSTUVWXYZABCD
+031
+ * ...
+032
+ * H - GHIJKLMNOPQRSTUVWXYZABCDED
+033
+ * ...
+034
+ * Y - YZABCDEFGHIJKLMNOPQRSTUVWX
+035
+ * Z - ZABCDEFGHIJKLMNOPQRSTUVWXY
+036
+ *
+037
+ * In the Ceasar code, the key is the number of letters we shift the original letter to produce the
+038
+ * coded message.
+039
+ * In the Vigenere's cypher the key is a word that is repeat over the message to encrypt.
+040
+ * Lets assume the key is "CHARLIE" and the message is "tutorials at dic"
+041
+ *
+042
+ * We write the the key over the message
+043
+ *
+044
+ * CHARLIECHARLIECH
+045
+ * tutorials at dic
+046
+ *
+047
+ * Now to encode the message we use:
+048
+ * - the shiftet alphabet at row C for the first letter so  T becomes V
+049
+ * - the shifted alphabet ar row H for the second letter so U becomes A
+050
+ * - the shifted alphabet at row A for the third letter so  T stays   T
+051
+ * and so on
+052
+ *
+053
+ * P.S.
+054
+ * If the key is A or AA or AAA or any multiple of A there is no encryption performed
+055
+ * Evidently the longuest the Key the less repetitions (cycles) you will have
+056
+ */
+057
+public class Vigenere {
+058
+ 
+059
+    // the key used by this Vigenere object
+060
+    private String key;
+061
+     
+062
+    /**
+063
+     * contructor that receives the key as parameter
+064
+     */
+065
+    public Vigenere(String key) {
+066
+        // call the standard method to set up the key
+067
+        setKey(key);
+068
+    }
+069
+     
+070
+    /**
+071
+     * The method to set up/change the key
+072
+     */
+073
+    public void setKey(String key) {
+074
+        // empty key ignore it
+075
+        if(key == null) {
+076
+            this.key = "";
+077
+            return;
+078
+        }
+079
+         
+080
+        // keep only the letters in the key and keep them uppercase
+081
+        char[] digit = key.toUpperCase().toCharArray();
+082
+        // use a stringBuilder to create the the keyString
+083
+        StringBuilder sb = new StringBuilder(digit.length);
+084
+        for(char c : digit) {
+085
+            if(c >= 'A' && c <= 'Z')
+086
+                sb.append(c);
+087
+        }
+088
+         
+089
+        // save our key
+090
+        this.key = sb.toString();
+091
+    }
+092
+     
+093
+    /**
+094
+     * Encode a message according to the key already registered
+095
+     */
+096
+    public String encode(String clear) {
+097
+        // ignore if null
+098
+        if(clear == null)
+099
+            return "";
+100
+        // ignore if key length == 0
+101
+        if(key.length() == 0)
+102
+            return clear.toUpperCase();
+103
+        // by convention in the cryptology world all original messages are in lower case
+104
+        // and coded messages in uppercase
+105
+        // so let us put the original message in lower cases
+106
+        // convert the original message into an array of char
+107
+        // into which converted character will be put later
+108
+        char[] digit = clear.toLowerCase().toCharArray();
+109
+         
+110
+        // build a string with the repeated key at least the size of our message
+111
+        String longKey = key;
+112
+        while(longKey.length() < clear.length())
+113
+            longKey += key;
+114
+         
+115
+        // pass through all input digits to convert them
+116
+        for(int i = 0; i < digit.length; i++) {
+117
+            // if they are not between 'a' and 'z' just ignore them (message has been translated to lowercase)
+118
+            if(digit[i] < 'a' || digit[i] > 'z')
+119
+                continue;
+120
+             
+121
+            // find out by how much we shift (like in a Ceasar code)
+122
+            char offset = longKey.charAt(i);
+123
+            // subtract 'A' for it for the number of shift
+124
+            int nbShift = offset - 'A';
+125
+            // convert the digit to uppercase (as we mentionned this is a standard cryptographic convention)
+126
+            digit[i] = Character.toUpperCase(digit[i]);
+127
+            // applied the shift to it
+128
+            digit[i] += nbShift;
+129
+            // wrap around if over 'Z'
+130
+            if(digit[i] > 'Z') {
+131
+                digit[i] -= 'Z';
+132
+                digit[i] += ('A' - 1);         
+133
+            }
+134
+        }
+135
+        return new String(digit);
+136
+    }
+137
+     
+138
+    /**
+139
+     * this method returns the decrypted String from the String received as parameter
+140
+     * according to the current key
+141
+     */ 
+142
+    public String decode(String coded) {
+143
+        // ignore if null
+144
+        if(coded == null)
+145
+            return "";
+146
+        // ignore if key length is 0
+147
+        if(key.length() == 0)
+148
+            return coded.toLowerCase();
+149
+        // by convention in the cryptology world all original messages are in lowercode
+150
+        // and coded messages in uppercase
+151
+        // so let us put the original message in upper cases
+152
+        // convert the original message into an array of char
+153
+        char[] digit = coded.toUpperCase().toCharArray();
+154
+        // build a string with the repeated key at least the size of our message
+155
+        String longKey = key;
+156
+        while(longKey.length() < coded.length())
+157
+            longKey += key;
+158
+         
+159
+        // pass through all input digits to convert them
+160
+        for(int i = 0; i < digit.length; i++) {
+161
+            // if they are not between 'A' and 'Z' just ignore them (message has been translated to uppercase)
+162
+            if(digit[i] < 'A' || digit[i] > 'Z')
+163
+                continue;
+164
+             
+165
+            // find out by how much we shift (like in a Ceasar code)
+166
+            char offset = longKey.charAt(i);
+167
+            // subtract 'A' for it for the number of shift
+168
+            int nbShift = offset - 'A';
+169
+            // convert the digit to lowerrcase (as we mentionned this is a standard cryptographic convention)
+170
+            digit[i] = Character.toLowerCase(digit[i]);
+171
+            // applied the shift to it
+172
+            digit[i] -= nbShift;
+173
+            // wrap around if before 'A'
+174
+            if(digit[i] < 'a') {
+175
+                digit[i] += 'z';
+176
+                digit[i] -= ('a' - 1);         
+177
+            }
+178
+ 
+179
+        }
+180
+        return new String(digit);
+181
+    }
+182
+     
+183
+    /**
+184
+     * To test our class
+185
+     */
+186
+    public static void main(String[] args) {
+187
+         
+188
+        //------------------------------------------------------------------
+189
+        // Automatic tests
+190
+        //------------------------------------------------------------------
+191
+         
+192
+        // test with the whole alphabet
+193
+        Vigenere vigenere = new Vigenere("DreamInCode");
+194
+        // code the whole alpahabet
+195
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+196
+        // code it
+197
+        String coded = vigenere.encode(alphabet);
+198
+        System.out.println("Coded alphabet is: " + coded);
+199
+        // decode it back
+200
+        String clear = vigenere.decode(coded);
+201
+        System.out.print("  Alphabet back ?: " + clear);
+202
+        // print if we succeed
+203
+        if(alphabet.equals(clear))
+204
+            System.out.println("   Seems to work :-)");
+205
+        else
+206
+            System.out.println("   Oups !!! Bug ...");
+207
+        System.out.println();
+208
+         
+209
+        // now test that frequency will be defeated
+210
+        // (we should find the key "Another Key" under the aaaaaaaaaa
+211
+        //  with the Ceasar encoding all e would have the same encoding)
+212
+        String freq = "eeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaazzzzzzzzzzzzzzz";
+213
+        // use another key
+214
+        vigenere.setKey("AnotherKey");
+215
+        // print out initial String
+216
+        System.out.println("Frequency test");
+217
+        System.out.println("Frequency String: " + freq);
+218
+        // encode it
+219
+        coded = vigenere.encode(freq);
+220
+        // print the coded string and its translation back
+221
+        System.out.println(" as coded String: " + coded);
+222
+        System.out.println("     end back ? : " + vigenere.decode(coded));
+223
+        System.out.println();
+224
+         
+225
+        //-------------------------------------------------------------------
+226
+        // End of automatic tests
+227
+        // you can remove all the automatic tests code in production
+228
+        //-------------------------------------------------------------------
+229
+         
+230
+        // now test from user input
+231
+        // build a Scanner to read from the console
+232
+        Scanner scan = new Scanner(System.in);
+233
+        System.out.print("Enter the key: ");
+234
+        // read the key and create a Vigenere object with it
+235
+        String key = scan.nextLine();
+236
+        Vigenere userVigenere = new Vigenere(key);
+237
+        // input message from user
+238
+        System.out.print("Enter message: ");
+239
+        String message = scan.nextLine();
+240
+        System.out.println("          Original: " + message);
+241
+        // code it and decode it back
+242
+        coded = userVigenere.encode(message);
+243
+        System.out.println("Encoded message is: " + coded);
+244
+        System.out.println("translated back ? : " + userVigenere.decode(coded));       
+245
+    }
+246
+}
+
+

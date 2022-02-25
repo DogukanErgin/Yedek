@@ -1,0 +1,16 @@
+public void  enkucukmetot(HuffmanNode dugum) {
+    Character enkucuk = dugum.value;
+    while(dugum!=null) {
+        if (dugum.left.value < enkucuk){
+            dugum.left.value = enkucuk;
+}
+        else if (dugum.right.value < enkucuk) {
+            dugum.right.value = enkucuk;
+        
+        } 
+        
+   return enkucuk;
+        }
+        enkucukmetot(dugum.left);
+        enkucukmetot(dugum.right);
+    

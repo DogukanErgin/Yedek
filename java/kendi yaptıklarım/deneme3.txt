@@ -1,0 +1,69 @@
+public class Kayit{                                   1.SINIF
+    public String isim;
+    public String soyisim;
+    public int para;
+
+
+    public Kayit(String isim,String soyisim,int para){
+
+        this.isim=isim;
+this.soyisim=soyisim;
+if (para>12)
+        this.para=para;
+    }
+    public void setPara(int para){
+        this.para=para;}
+
+
+        public int getPara(){
+            return para;
+
+        }
+
+    public void setSoyisim(String soyisim){
+        this.soyisim=soyisim;
+    }
+    public String getSoyisim(){
+        return soyisim;
+    }
+    public void setIsim(String isim) {
+        this.isim = isim;
+
+    }
+
+    public String getIsim() {
+        return isim;
+
+    }
+}                                         2.SINIF
+
+import java.util.Scanner;
+public class KayitTest{
+    public static void main(String[] args) {
+        Kayit isim1=new Kayit("Doðukan","Ergin" ,50);
+        Kayit isim2=new Kayit("Sefa","Sönmez" , 5);
+        System.out.println(isim1.getIsim()+isim1.getSoyisim()+isim1.getPara()  +isim2.getIsim()+isim2.getSoyisim()+isim2.getPara());
+
+Scanner klavye =new Scanner(System.in);
+     System.out.println("1.hesaba eklemek istediðiniz miktarý girin mevcut miktar ="+isim1.getPara());
+
+int eklenenpara=klavye.nextInt();
+System.out.println("yeni bakiye "+(eklenenpara+isim1.getPara()));
+
+
+
+
+
+
+
+
+
+     System.out.println("2.hesaba eklemek istediðinz miktarý girin mevcut miktar= "+isim2.getPara());
+int eklenenpara2=klavye.nextInt();
+
+        System.out.println("yeni bakiye "+(eklenenpara2+isim2.getPara()));
+    }
+
+
+
+}
