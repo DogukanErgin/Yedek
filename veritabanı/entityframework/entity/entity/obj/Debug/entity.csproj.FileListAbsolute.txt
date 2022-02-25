@@ -1,0 +1,14 @@
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\entity.exe.config
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\entity.exe
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\entity.pdb
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\obj\Debug\entity.csproj.AssemblyReference.cache
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\obj\Debug\entity.csproj.CoreCompileInputs.cache
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\obj\Debug\entity.exe
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\obj\Debug\entity.pdb
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\EntityFramework.dll
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\EntityFramework.xml
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\obj\Debug\entity.csproj.CopyComplete
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\ConsoleTables.dll
+C:\Users\Ergin\Desktop\veritabanı\entityframework\entity\entity\bin\Debug\ConsoleTables.pdb
