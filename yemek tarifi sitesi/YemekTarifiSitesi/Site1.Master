@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="YemekTarifiSitesi.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 44px;
+            margin-top: 0px;
+        }
+        	
+
+        .auto-style9 {
+            color: #ff83ed;
+            font-weight: bold;
+            text-align: center;
+            background-color: #800000;
+        }
+        .auto-style10 {
+            color: #00FF00;
+        }
+       
+    </style>
+</head>
+
+<body  >
+    <form id="form1" runat="server">
+        <div style="width: 700px; height: 150px; margin-left: 300px; background-color: #315269;">
+
+            <p style="margin-left: 80px">
+
+                <br />
+
+            </p>
+            <br />
+
+        </div>
+        <div style="width: 700px; height: 42px; margin-left: 300px; background-color: #FFFFFF; margin-top: 30px; margin-bottom: 0px;">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style9"><a href="Webform1.aspx" class="auto-style10">ANA SAYFA </a></td>
+                    <td class="auto-style9"><a href="Iletişim.aspx" class="auto-style10">GÜNÜN YEMEĞİ</a></td>
+                    <td class="auto-style9"><a href="Tarifoner.aspx" class="auto-style10">TARİF ÖNER</a></td>
+                    <td class="auto-style9"><a href="Hakkimizda.aspx" class="auto-style10">HAKKIMIZDA</a></td>
+                    <td class="auto-style9"><a href="Iletişim.aspx" class="auto-style10">İLETİŞİM</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 700px; height: 20px; margin-left: 300px;"></div>
+
+        <div style="width: 700px; height: 415px; margin-left: 300px;">
+
+            <div style="width: 200px; float: left; height: auto; background-color: #006600;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+
+            <div style="width: 400px; float: left; height:360px; margin-left: 100px; background-color: #FFFFFF;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
